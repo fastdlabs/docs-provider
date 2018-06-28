@@ -1,0 +1,10 @@
+{
+    "name": "fastd/docs-provider",
+    "authors": [
+        {
+            "name": "JanHuang",
+            "email": "bboyjanhuang@gmail.com"
+        }
+    ],
+    "require": {}
+}

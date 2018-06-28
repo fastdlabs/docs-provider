@@ -14,12 +14,20 @@ use Swagger\Annotations\Operation;
 
 class Markdown extends AbstractDocument
 {
+    /**
+     * @param Operation $operation
+     */
+    protected function sidebar(Operation $operation)
+    {
+
+    }
+
     public function template(Operation $annotation)
     {
         $parameters = '';
         foreach ($annotation->parameters as $parameter) {
             $parameters .= sprintf(
-                '|%s|%s|%s|%s|',
+                '| %s | %s | %s | %s |',
                 $parameter->name,
                 ($parameter->required ? 'true' : 'false'),
                 $parameter->type,
